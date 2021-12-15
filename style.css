@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7e5e5;
+}
+
+article{
+    width: 950px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    border: 2px solid #dddcdc;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#sectionHeader{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 15px;
+    color: #333333;
+}
+
+section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#sideNav{
+    width: 17%;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+
+#sideNav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    color: #686666;
+    overflow:hidden;
+
+}
+
+#featuring{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.item-container{
+    display: flex;
+    position: relative;
+    transition: all 1s;
+    left: 0;
+
+}
+
+.item-card{
+    width: 180px;
+    height: 97%;
+    padding: 13px;
+    background-color: white;
+    margin-left: 10px;
+    border: 1px solid #e7e5e5;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+}
+
+.product-image{
+    width: 100%;
+    height: 170px;
+    background-color: #f3f3f3;
+    text-align: center;
+    line-height: 170px;
+    border-radius: 5px;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.product-title{
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.product-price{
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.product-shipment{
+    height: 30px;
+    font-size: 11px;
+    padding: 8px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.product-shipment i{
+    color: rgb(0, 173, 0);
+}
+
+.add-to-cart{
+    width: 100%;
+    height: 40px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(34, 75, 212);
+    border-style: none;
+    border-radius: 5px;
+}
+
+.tab-container{
+    width: 100%;
+    height: 100%;
+}
+
+.tab{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;  
+    padding-left: 7px;  
+}
+
+.tab a{
+    width: 100%;
+    white-space: nowrap;
+    line-height: 37px;
+    margin-left: 3px;
+    text-indent: 15px;
+    overflow:hidden;
+
+}      
+
+.activeLink{
+    font-weight: bold;
+    color: rgb(76, 104, 230);
+    background-color: #e5edf5;
+    border-radius: 5px;
+}
+
+.activeTab{
+    border-left: 3px solid rgb(76, 104, 230);
+}
+
+.fade{
+    visibility: hidden;
+}
+
+#btnHolder{
+    display: flex;
+    width: 81.5%;
+    top: 23%;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 22;
+    justify-content: space-between;
+
+}
+
+#btnHolder button{
+    width: 45px;
+    height: 60px;
+    border: 0.5px solid #e7e5e5;
+    background-color: white;
+    
+}
+
+#prevBtn{
+    border-top-right-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+    border-left: none;
+}
+
+#nextBtn{
+    border-top-left-radius: 30rem;
+    border-bottom-left-radius: 30rem;
+    border-right: none;
+}
+
+#popUp{
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    bottom: 4%;
+    left: 43%;
+    font-size: 14px;
+    background-color: #111111;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 1s;
+}
+
+#popUp div {
+    display: flex;
+    flex-direction: row;
+}
+
+#popUp div div{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.approved{
+    color: #f3f3f3;
+}
+
+.direct{
+    color: rgb(180, 208, 240);
+}
+
+.fa-check-circle{
+    font-size: 25px;
+    line-height: 32px;
+    color: rgb(0, 173, 0);
+    border-radius: 50%;
+}
+
+.fa-times{
+    font-size: 25px;
+    color: #f3f3f3;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 700px){
+    article{
+        width: 400px;
+    }
+    section{
+        flex-direction: column;
+        height: 440px;
+    }
+
+    #sectionHeader h3{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    #sideNav{
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        font-size: 20px;
+        border-bottom: 2px solid #e7e5e5;
+        padding-left: 10px;
+    }
+
+    #sideNav ul{
+        flex-direction: row;
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+    }
+
+    #sideNav ul li{
+        margin-right: 10px;
+    }
+
+    #featuring{
+        width: 100%;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    #btnHolder{
+        width: 100%;
+        top: 32%;
+        margin: -10px;    
+    }
+
+    .activeSlide {
+        scroll-snap-type: unset;
+    }
+
+    .activeLink{
+        color: #1b1b1b;
+        background-color: unset;
+    }
+
+    .activeTab{
+        border-left: none;
+        border-bottom: 2px solid rgb(76, 104, 230);
+    }
+
+    .tab a{
+        font-size: 18px;
+        width: 100%;
+        white-space: nowrap;
+    }
+}
